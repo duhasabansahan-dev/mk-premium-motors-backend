@@ -17,7 +17,7 @@ mongoose
 app.get("/", (req, res) => {
   res.send("MK PREMIUM MOTORS BACKEND ÇALIŞIYOR");
 });
-
+app.use("/api/cars", require("./routes/cars"));
 app.listen(process.env.PORT || 5000, () => {
   console.log("Server çalışıyor");
 });
